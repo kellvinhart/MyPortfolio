@@ -7,26 +7,45 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Collins Koech Portfolio</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/footer.css">
 	<link rel="stylesheet" type="text/css" href="css/gallery.css">
 	<link rel="icon" type="text/css" href="img/me.png">
 	<link rel="stylesheet"  href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="./css/mode.css">
+	<link href="github-widget/github-widget.css" rel="stylesheet" type="text/css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 	<script src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js"></script>
 </head>
 <body>
+	<!--Pre LOad animation page-->
 	<div class="stat">
 		<div class="img-con">
-			<img src="./img/me.png">
+			<img src="./img/pp.jpg">
 		</div>
-		<h1>Collins Koech</h1>
-		<h2>Devoted Developer</h2>
+		<h1 class="ml15"><span class="word"> <span class="caps">C</span>ollins</span><span class="word"> <span class="caps">K</span>oech </span> </h1>
+		<h2 class="ml15"><span class="word"> <span class="caps">D</span>evoted</span><span class="word"> <span class="caps">D</span>eveloper</span> </h2>
+		<div class="tab">
+			<button><h3>Experience</h3></button>
+			<div class="prep">
+				<p>preparing your experience on coko's portfolio <div class="sp"><img src="./img/load.png" alt=""></div></p>
+			</div>
+		</div>
 	</div>
-	<button class="navi" id="low"><i class="material-icons">arrow_upward</i></button>
+	<!--<div class="stato">
+		<h4>Select Desired Theme</h2>
+		<div class="theme">
+			
+		</div>
+	</div>-->
+	<button class="navi" id="low"><i class="material-icons">arrow_upward</i></button><!--Scroll top button-->
 	<div class="journey">
-		<h3>My Journey</h3>
+		<h3>My Journey</h3>F
 	</div>
 	<div class="container">
+		<!--Left side Description Container-->
 	<div class="desc">
 		<div class="container">
+			<!--Profile image placed as background-->
 			<div class="desc-img">
 				
 			</div>
@@ -39,6 +58,7 @@
 				</div>
 				<p>Its all in the passion</p>
 			</div>
+			<!--Mydescription section-->
 			<div class="my-desc">
 				<div class="Name">
 					<h3>Collins Koech</h3>
@@ -50,7 +70,7 @@
 					<p>Founder of The DevcoKenya</p>
 				<br>
 					<div class="git">
-						<a href="http://dsc.community.dev">Dsc CUEA Core Team(Web Developement Lead)</a>
+						<a href="http://dsc.community.dev">DscCUEA Web Developement Lead</a>
 					</div>
 					<div class="git">
 						<a href="https://commits.top/kenya.html">Top Kenyan Contributors</a>
@@ -89,6 +109,10 @@
 					</div>
 				</div>
 			</div>
+			<!--<div class="mesb">
+				<button class="messbb">Reach out</button>
+			</div>-->
+			
 			<div class="tweetPop">
 				<div id="closeo" class="close">
 					+
@@ -97,12 +121,13 @@
 			</div>
 		</div>
 	</div>
+	<!--Burger Button-->
 	<div class="btn" id="btn">
-		
 			<div class="line"></div>
 			<div class="line"></div>
 			<div class="line"></div>
 	</div>
+	<!--Optional top header for smaller screen widths-->
 	<div class="header-opt">
 		<div class="header-img">
 			<img src="./img/me.png">
@@ -114,6 +139,7 @@
 			<h5>Devoted Developer</h5>
 		</div>
 	</div>
+	<!--Languages Header Content Container-->
 	<div class="content-1">
 		<div class="lang">
 			<div class="Cat">
@@ -147,53 +173,241 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> 
+	<!--Header Navigation Container-->
 	<header>
 		<div class="header" id="myHeader" >
 			<div class="dependencies Header-btn">
 				<button id="dep">Resume</button>
 			</div>
 			<div class="Web Header-btn">
-				<button id="web">Gallery</button>
+				<button id="web" class="active">My Projects</button>
 			</div>
 			<div class="operatingSystems Header-btn">
-				<button id="os">Projects</button>
+				<button id="os">Certifications</button>
 			</div>
-			
 		</div>
 	</header>
+	<!--Certifications Container-->
 	<div class="os-wrapper">
-			<div class="content" style="background-color: rgb(255,0,255,0.1);">
-				<div class="DevcoKenya">
-					<div class="content-img">
-						<img src="./img/DevcoKenya.png">
+		<div class="content">
+			<div class="wrap-collabsible">
+				<input id="collapsible" class="toggle" type="checkbox">
+				<label for="collapsible" class="lbl-toggle">Angular + Nest Js Certificate</label>
+				<div class="collapsible-content">
+				  <div class="content-inner">
+					<div class="data-img">
+						<img src="./img/angularcert.png" alt="Angular Nestjs Certification">
 					</div>
-					<div class="content-text">
-						<h4>DEvcoKenya Website</h4>
-						<p>A website for the Devco Kenya Developers
-						A Web based platform that brings developers with a common goal with the purpose of sharing of ideas and implementing solutions to various tasks</p>
-						<a href="https://github.com/collinskoech11/DevcoKenya.git"><img src="./img/github.png">DevcoKenya</a>
-						<br>
-						<div class="jambopng"><a href="https://guthub.com/Devco254">Devco254</a></div>
+				  </div>
+				</div>
+			  </div>
+		</div>
+		<div class="content">
+			<div class="wrap-collabsible">
+				<input id="collapsible" class="toggle" type="checkbox">
+				<label for="collapsible" class="lbl-toggle">React + Redux Certificate</label>
+				<div class="collapsible-content">
+				  <div class="content-inner">
+					<div class="data-img">
+						<img src="./img/reactcert.png" alt="Angular Nestjs Certification">
+					</div>
+				  </div>
+				</div>
+			  </div>
+		</div>
+		<div class="content">
+			<div class="wrap-collabsible">
+				<input id="collapsible" class="toggle" type="checkbox">
+				<label for="collapsible" class="lbl-toggle">Python 3 Certificate</label>
+				<div class="collapsible-content">
+				  <div class="content-inner">
+					<div class="data-img">
+						<img src="./img/pythoncert.png" alt="Python Certification">
+					</div>
+				  </div>
+				</div>
+			  </div>
+		</div>
+		<div class="content">
+			<div class="wrap-collabsible">
+				<input id="collapsible" class="toggle" type="checkbox">
+				<label for="collapsible" class="lbl-toggle">Sql Certificate</label>
+				<div class="collapsible-content">
+				  <div class="content-inner">
+					<div class="data-img">
+						<img src="./img/sqlcert.png" alt="SQL Certification">
+					</div>
+				  </div>
+				</div>
+			  </div>
+		</div>
+		<div class="content">
+			<div class="wrap-collabsible">
+				<input id="collapsible" class="toggle" type="checkbox">
+				<label for="collapsible" class="lbl-toggle">Jquery Certificate</label>
+				<div class="collapsible-content">
+				  <div class="content-inner">
+					<div class="data-img">
+						<img src="./img/jquerycert.png" alt="Jquery Certification">
+					</div>
+				  </div>
+				</div>
+			  </div>
+		</div>
+		<div class="content">
+			<div class="wrap-collabsible">
+				<input id="collapsible" class="toggle" type="checkbox">
+				<label for="collapsible" class="lbl-toggle">JAVA Certificate</label>
+				<div class="collapsible-content">
+				  <div class="content-inner">
+					<div class="data-img">
+						<img src="./img/javacert.png" alt="JAVA Certification">
+					</div>
+				  </div>
+				</div>
+			  </div>
+		</div>
+		<div class="content">
+			<div class="wrap-collabsible">
+				<input id="collapsible" class="toggle" type="checkbox">
+				<label for="collapsible" class="lbl-toggle">JAVASCRIPT Certificate</label>
+				<div class="collapsible-content">
+				  <div class="content-inner">
+					<div class="data-img">
+						<img src="./img/javascriptcert.png" alt="JAVASCRIPT Certification">
+					</div>
+				  </div>
+				</div>
+			  </div>
+		</div>
+		<div class="content">
+			<div class="wrap-collabsible">
+				<input id="collapsible" class="toggle" type="checkbox">
+				<label for="collapsible" class="lbl-toggle">CSS Fundamentals Certificate</label>
+				<div class="collapsible-content">
+				  <div class="content-inner">
+					<div class="data-img">
+						<img src="./img/csscert.png" alt="CSS Certification">
+					</div>
+				  </div>
+				</div>
+			  </div>
+		</div>
+		<div class="content">
+			<div class="wrap-collabsible">
+				<input id="collapsible" class="toggle" type="checkbox">
+				<label for="collapsible" class="lbl-toggle">HTML Certificate</label>
+				<div class="collapsible-content">
+				  <div class="content-inner">
+					<div class="data-img">
+						<img src="./img/htmlcert.png" alt="HTML Certification">
+					</div>
+				  </div>
+				</div>
+			  </div>
+		</div>
+	</div>
+	<!--Github Calendar & Projects Container-->
+	<div class="content-wrapper">
+		<div class="content calendar" style="background-color: rgba(0,0,0,0.7 ); color:black">
+				<h2 style="color:#fff; text-align:center;">Github Commit Graph</h2>
+   				 <!-- Loading stuff -->
+				<div class="second-cal" >
+					<img src="http://ghchart.rshah.org/003399/collinskoech11" alt="Commit graph" >
+					<p>** Each blue square represents 24hr coding activity</p>
+				</br></br>
+					<h2 class="code-line" data-line-start=0 data-line-end=1 style="color:#fff; text-align:cener;" ><a id="2021365DayCommitChallenge_0"></a>2021 #365DayCommitChallenge</h2>
+				</div>
+				</br></br>
+			  
+				</br><img style="width:60%; height:40%" src="https://github-readme-stats.vercel.app/api?username=collinskoech11&amp;&amp;show_icons=true&amp;title_color=ffffff&amp;icon_color=2A75CF&amp;text_color=daf7dc&amp;bg_color=191919" alt="collinskoech11's GitHub Stats." class="stat-counter"><br>
+			</br><div class="github-widget" data-user="collinskoech11" data-options='{"sortBy":"stargazers_count", "limit":6}'></div>
+		</div>
+		<div class="content" style="background-color: rgb(0,0,0,0.7);">
+			<div class="Gikosh">
+				<div class="content-img">
+					<img src="./img/livesummary.jpg" alt="">
+				</div>
+				<div class="content-text">
+					<h4>Live Summary</h4>
+					<p>A web app built for the sole purpose of easing the learning experience of Campus Students. All content in one place </p>
+					<div class="project-btn-container">
+						<a href="https://github.com/collinskoech11/cmt4notes"><button>Github Repository</button></a>
+						<a href="https://live-summary.web.app"><button>Live Website</button></a>
 					</div>
 				</div>
 			</div>
-			<div class="content" style="background-color: rgb(255,255,0,0.1);">
-				<div class="jambo" >
-					<div class="content-img">
-						<img src="./img/Jambopay.png">
-					</div>
-					<div class="content-text">
-						<h4>JamboPay Market Clone</h4>
-						<p>Worked on making a clone of the jambo pay market website just for web developement practice 
-						incorporated HTML, CSS and Javascript for that purpose. </p>
-						<a href="https://github.com/collinskoech11/JamboPayMoqup.git"><img src="./img/github.png">JamboPayMoqup</a>
-						<br>
-						<div class="jambopng"><a href="https://jambopay.market"><img  src="./img/jambo.png">Jambo pay market</a></div>
+		</div>
+		<div class="content" style="background-color: rgb(0,0,0,0.7);">
+			<div class="Gikosh">
+				<div class="content-img">
+					<img src="./img/Fimc.png" alt="Faith International Ministries Church">
+				</div>
+				<div class="content-text">
+					<h4>Faith International Ministries Church Website</h4>
+					<p>The Faith International Ministries Church wants to do everything we can to ensure that our communities are taking the necessary precautions to slow the spread of COVID-19. At the same time, we want to make it possible for everyone to experience the fellowship and Biblical teaching that keeps our faith strong, which is more important now than ever.</p>
+					<div class="project-btn-container">
+						<a href="https://github.com/collinskoech11/FaithInterntionalMinistriesChurch"><button>Github Repository</button></a>
+						<a href="https://faithinternationalchurch.web.app"><button>Live Website</button></a>
 					</div>
 				</div>
 			</div>
-		<div class="content" style="background-color: rgb(0,0,255,0.1);">
+		</div>
+		<div class="content" style="background-color: rgb(0,0,0,0.7);">
+			<div class="Gikosh">
+				<div class="content-img">
+					<img src="./img/Gikosh.png" alt="">
+				</div>
+				<div class="content-text">
+					<h4>Gikosh.com</h4>
+					<p>Gikomba market is the ultimate place for second hand clothes. It is popular for the aggressive hawking. Think of it as the wall street of hawking for low and middle class, and the craze surrounding a need for quality for less. Everything is on sale, and the hawkers will almost pay you to buy :</p>
+					<div class="project-btn-container">
+						<a href="https://github.com/collinskoech11/DscEcommerceProject.git"><button>Github Repository</button></a>
+						<a href="#"><button>Live Website</button></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="content" style="background-color: rgb(0,0,0,0.7);">
+			<div class="DevcoKenya">
+				<div class="content-img">
+					<img src="./img/DevcoKenya.png">
+				</div>
+				<div class="content-text">
+					<h4>DEvcoKenya Website</h4>
+					<p>A website for the Devco Kenya Developers
+					A Web based platform that brings developers with a common goal with the purpose of sharing of ideas and implementing solutions to various tasks</p>
+					<a href="https://github.com/collinskoech11/DevcoKenya.git"><img src="./img/github.png">DevcoKenya</a>
+					<br>
+					<div class="jambopng"><a href="https://guthub.com/Devco254">Devco254</a></div>
+					<div class="project-btn-container">
+						<a href="https://github.com/collinskoech11/JamboPayMoqup.git"><button>Github Repository</button></a>
+						<a href="https://jambopay.market"><button>Live Website</button></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="content" style="background-color: rgb(0,0,0,0.7);">
+			<div class="jambo" >
+				<div class="content-img">
+					<img src="./img/Jambopay.png">
+				</div>
+				<div class="content-text">
+					<h4>JamboPay Market Frontend Clone</h4>
+					<p>Worked on making a clone of the jambo pay market website just for web developement practice 
+					incorporated HTML, CSS and Javascript for that purpose. </p>
+					<a href="https://github.com/collinskoech11/JamboPayMoqup.git"><img src="./img/github.png">JamboPayMoqup</a>
+					<br>
+					<div class="jambopng"><a href="https://jambopay.market"><img  src="./img/jambo.png">Jambo pay market</a></div>
+					<div class="project-btn-container">
+						<a href="https://github.com/collinskoech11/JamboPayMoqup.git"><button>Github Repository</button></a>
+						<a href="https://jambopay.market"><button>Live Website</button></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="content" style="background-color: rgb(0,0,0,0.7);">
 			<div class="cokobox">
 				<div class="content-img">
 					<img src="./img/CokoBox.png">
@@ -201,11 +415,14 @@
 				<div class="content-text">
 					<h4>CokoBox Tech Solutions</h4>
 					<p>A web app built to provide technical services like O/S Software installation and Photography skills . This platform ensures customers get a satisfactory service on various technical difficulties.</p>
-					<a href="https://github.com/collinskoech11/CokoBox.git"><img src="./img/github.png">CokoBox</a>
+					<div class="project-btn-container">
+						<a href="https://github.com/collinskoech11/CokoBox.git"><button>Github Repository</button></a>
+						<a href="https://github.com/collinskoech11/CokoBox.git"><button>Github Repository</button></a>
+					</div>
 				</div>
 			</div>
 		</div>
-		<div class="content jamboone" style="background-color: rgb(0,0,0,0.3);">
+		<div class="content jamboone" style="background-color: rgb(0,0,0,0.7);">
 			<div class="one">
 				<div class="content-img">
 					<img src="./img/OneStopShop.png">
@@ -214,278 +431,270 @@
 					<h4>OneStop Shop</h4>
 					<p>An online shop that showcases products available for online purchase </p>
 					<a href="https://github.com/collinskoech11/OneStopShop.git"><img src="./img/github.png">One Stop Shop</a>
+					<div class="project-btn-container">
+						<a href="https://github.com/collinskoech11/JamboPayMoqup.git"><button>Github Repository</button></a>
+						<a href="https://jambopay.market"><button>Live Website</button></a>
+					</div>
 				</div>
 			</div>
-		</div>
-		<div class="content jambotwo" style="background: transparent;">
-			<div class="mysa">
-				<div class="content-img">
-					<img src="./img/MumiasYouth.png">
-				</div>
-				<div class="content-text">
-					<h4>Mumias Youth Sports Club</h4>
-					<p>A website crafted to showcase the Mumias Youth Sports Assosiation Soccer club team members and various activities that the club indulges in .</p>
-					<a href="https://github.com/collinskoech11/MumiasYouthSportsAssosiation.git"><img src="./img/github.png">Mumias Youth Sports Assosiation</a>
-				</div>
-			</div>
-		</div>
-		<div class="content jambothree" style="background-color: rgb(0,0,0,0.03);">
-			<div class="devco">
-				<div class="content-img">
-					<img src="./img/DevcoModels.png">
-				</div>
-				<div class="content-text">
-					<h4>Devco Models And Photography</h4>
-					<p> A web app that provides a platform for various aspiring Models and Photographers to showcase their talents and skills</p>
-					<a href="https://github.com/collinskoech11/ModelingStite.git"><img src="./img/github.png">Github Repository</a>
-					<a href="https://devcomodels.web.app">Devco Models</a>
-				</div>
-			</div>
-		</div>
-		<div class="content jambofour" style="background-color: rgb(0,0,0,0.7)">
-			<div class="fifth">
-				<div class="content-img">
-					<img src="./img/FifthGear.png">
-				</div>
-				<div class="content-text">
-					<h4>Fifth Gear Carshow</h4>
-					<p>A Single page website that displays various images of different car brands and a short description of the car brand</p>
-					<a href="https://github.com/collinskoech11/FifthGear.git"><img src="./img/github.png">Fifth Gear Car show</a>
-				</div>
-			</div>
-		</div>
-		<div class="content jambofive" style="background-color: rgb(0,0,0,0.03);">
-			<div class="absolute">
-				<div class="content-img">
-					<img src="./img/AbsoluteCarpets.png">
-				</div>
-				<div class="content-text">
-					<h4>Absolute Carpets Shop</h4>
-					<p>Online shop for carpets of different designs
-					&copy; Absolute Carpets</p>
-					<a href="https://github.com/collinskoech11/AbsoluteCarpets.git"><img src="./img/github.png">Absolute Carpets</a>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="content-wrapper">
-		<div class="content calendar">
-			
-   				 <!-- Loading stuff -->
-   			<div class="load">
-				<img src="./img/load.png" alt="">
-   			</div>
 		</div>
 		<div class="content">
-			<div class="gallery-cont">
-				<div class="gallery-container w-2 h-1">
-					<div class="gallery-item">
-					<div class="image"> 
-						<img src="https://source.unsplash.com/1100x900/?programmer" alt="nature">
-					</div>	
-					<div class="text">html</div>
+			<div class="snake">
+				<div class="content-img">
+					<img src="./img/SnakeGame.png" alt="">
+				</div>
+				<div class="content-text">
+					<h4>Snake game in python</h4>
+					<p></p>
+					<a href="https://github.com/collinskoech11/SnakeGame.git"><img src="./img/github.png" alt="">Snake Game in Python</a>
+					<div class="project-btn-container">
+						<a href="https://github.com/collinskoech11/JamboPayMoqup.git"><button>Github Repository</button></a>
+						<a href="https://jambopay.market"><button>Live Website</button></a>
 					</div>
 				</div>
-				<div class="gallery-container w-4 h-1">
-					<div class="gallery-item">
-						<div class="image"> 
-							<img src="https://source.unsplash.com/1100x900/?css" alt="people">
-						</div>	
-						<div class="text">css</div>
-					</div>
-				</div>
-				<div class="gallery-container w-3 h-1">
-					<div class="gallery-item">
-					<div class="image"> 
-						<img src="https://source.unsplash.com/1100x900/?pythonDjango" alt="sport">
-					</div>	
-					<div class="text">python</div>
-				</div>
 			</div>
-				<div class="gallery-container w-3 h-1">
-					<div class="gallery-item">
-					<div class="image"> 
-						<img src="https://source.unsplash.com/1100x900/?pythonFlask" alt="car">
-					</div>	
-					<div class="text">django</div>
+		</div>
+		<div class="content" style="background-color: #000;">
+			<div class="webWEdnesdays">
+				<div class="content-img">
+					<img src="./img/webwednesdays.jpg" alt="">
 				</div>
-			</div>
-				<div class="gallery-container w-2 h-1">
-					<div class="gallery-item">
-					<div class="image"> 
-						<img src="https://source.unsplash.com/1100x900/?javascript" alt="house">
-					</div>	
-					<div class="text">javascriptk</div>
+				<div class="content-text" style="float: right;">
+					
 				</div>
-			</div>
-				<div class="gallery-container w-2 h-1">
-					<div class="gallery-item">
-					<div class="image"> 
-						<img src="https://source.unsplash.com/1100x900/?technology" alt="javascript">
-					</div>	
-					<div class="text">javascript</div>
-				</div>
-			</div>
-				<div class="gallery-container w-2 h-1">
-					<div class="gallery-item">
-					<div class="image"> 
-						<img src="https://source.unsplash.com/1100x900/?Reactjs" alt="people">
-					</div>	
-					<div class="text">Nature</div>
-				</div>
-			</div>
-				<div class="gallery-container w-5 h-1">
-					<div class="gallery-item">
-					<div class="image"> 
-						<img src="https://source.unsplash.com/1100x900/?ReactNative" alt="phone">
-					</div>	
-					<div class="text">Phone</div>
-				</div>
-			</div>
-				<div class="gallery-container w-1 h-1">
-					<div class="gallery-item">
-					<div class="image"> 
-						<img src="https://source.unsplash.com/1100x900/?nodejs" alt="nodejs">
-					</div>	
-					<div class="text">nodejs</div>
-				</div>
-			</div>
-		
 			</div>
 		</div>
 	</div>
+	<!--CV Container-->
 	<div class="dep-wrapper" >
 		<div class="content">
-		<div class="container">
-		<div class="name">
-			<h1>Collins Koech</h1>
-			<h2 style="color:#000;">Full Stack Developer</h2>
-		</div>
-		<div class="contact">
-			<div class="location">
-				<img src="./img/location.jpg">Nairobi
-			</div>
-			<div class="phone">
-				<img src="./img/phone.jpg">0728000107
-			</div>
-			<div class="emaili">
-				<img src="./img/mail.jpg">collinskoechck34@gmail.com
-			</div>
-			<div class="githubu">
-				<a href="https://github.com/collinskoech11"><img src="./img/github.jpg">collinskoech11</a>
-			</div>
-		</div>
-		<div class="summary">
-			<p>Motivated Web Designer adept at conceptualizing, designing and maintaining product interfaces to foster exceptional user experiences. Dedicated creator of extremely accesible user interfaces  and aesthetically pleasing visual designs. Skilled at generating sites for both desktops and mobile browsers. Combines accepted best practices with creative inovation to produce beautiful and functional results. Creative Web developer with skill in both the front end and Back end. Authors web pages and repairing issues with full accuracy and efficiency. Extenxive familiarity in both Software and Hardware. Sound written and oral capabilities. Result driven Web Developerspecializing in user friendly interfaces for the various designs. Acustommed to fast-paced environment, team and individual projects. Keen on learning new tochnologies that come up.</p>
-		</div>
-		<div class="skills">
-			<h4>Skills</h4>
-			<h4 style="color:#000;"><li>Web Developer</li></h4>
-			<h5>Free lancer ( Self Employed), Nairobi, Kenya</h5>
-			<div class="skill-list">
-				<li>Created Site interface layout using HTML CSS and Javascript</li>
-				<li>Implemented various technologies such as React.js, ReactNative and Node.js</li>
-				<li>Created various site backend using python( Django)</li>
-				<li>Created Wireframes, ScreenFlow diagrams and UI spec documentation</li>
-				<li>Defined and demonstrated top notch User interface to uphold user friendliness</li>
-				<li>Mentor for young Aspiring Web Developers</li>
-			</div>
-		</div>
-		<div class="skills">
-			<h4 style="color:#000;"><li>Android App Developer</li></h4>
-			<h5>Fast Learner( Enthusiastic about App developement</h5>
-			<div class="skill-list">
-				<li>Designed user friendly interfaces using XML on android studio</li>
-				<li>Skilled in APP backend in both Java and Kotlin</li>
-				<li>Created Apps that are applicable in our day to day lives</li>
-			</div>
-		</div>
-		<div class="skills">
-			<h4 style="color:#000;"><li>Database Designer</li></h4>
-			<h5>Incredible Database Designing Skills</h5>
-			<div class="skill-list">
-				<li>Designed various database schemas for use in app backend management</li>
-				<li>Areas of focus on Database are MySql and MongoDB</li>
-				<li>Documented all designed database as a user guide for the intend users</li>
-				<li>Developed Flowcharts and Diagrams to illustrate flow of data through a Database</li>
-			</div>
-		</div>
-		<div class="skills">
-			<h4 style="color:#000;"><li>Softwares and Systems Expert</li></h4>
-			<h5>Installation and Maintanance of Softwares</h5>
-			<div class="skill-list">
-				<li>Over 300+ Succesful Operating Systems Installation</li>
-				<li>Configured, Installed and tuned software based systems for perfomancein various databases</li>
-				<li>Experience in Maintaining Windows and Linux OPerating Systems and their various distros</li>
-				<li>Performed System Backup and Restoration in various Cases</li>
-				<li>Reviewed Performance Benchmarks and established metrics for future tracking</li>
-				<li>Evaluated and adopted new technologies to address changing industry needs</li>
-				<li>Investigated and addressed System issues to enhance usability and improve functionality</li>
-				<li>Developed Flowcharts and Diagrams to illustrate flow of data through a system</li>
-			</div>
-		</div>
-		<div class="skills">
-			<h4 style="color: #000;"><li>Work Experience</li></h4>
-			<h5>May 2019</h5>
-			<div class="skill-list">
-				<li>Performed Systems maintanance at Kapchebet Girls Secondary School</li>
-				<p>Ref: Mrs Metet (Deputy Principal Kapchebet girls)</p>
-			</div>
-			<h5>June 2020</h5>
-			<div class="skill-list">
-				<li>Unpaid intern at DL Koisagat tea Factory</li>
-				<p>Ref: Mr Stanley Cheruiyot (General Manager DL Teas)</p>
-			</div>
-			<h5>July 2020</h5>
-			<div class="skill-list">
-				<li>Volunteer Author at iCOdEMag.com</li>
-				<p>Ref: contact@icodemag.com</p>
-			</div>
-		</div>
-		<div class="skills">
-			<h3 style="color:#000;">Education</h3>
-			<h4 style="color:#000;">Completed Google Digital Skills Certification</h4>
-			<h5>Google Digital Skills</h5>
-			<br><br>
-			<h4 style="color:#000;">Diploma Degeree: Diploma in Mobile Information Technology</h4>
-			<h5>Emobilis institute of Technology</h5>
-			<br><br>
-			<h4 style="color:#000;">Bachelors Degree: Bachelor of Science in Computer Science</h4>
-			<h5>Currently taking my Computer Science Degree at The Catholic University of Eastern Africa</h5>
-			<br><br>
-			<h4 style="color:#000;">Secondary School Education</h4>
-			<h5>Sunshine Secondary School Nairobi</h5>
-		</div>
-		<div class="skills">
-			<h4 style="color:#000;"><li>Clubs</li></h4>
-			<h5>Member of the Developer Students Club of CUEA</h5>
-			<h5>Member of The DevCoKenya</h5>
-		</div>
-		<div class="skills">
-			<h3 style="color:#000;">Hobies Include:</h3>
-			<li>Coding</li>
-			<li>Swimming</li>
-			<li>hiking</li>
+				<div class="container">
+					<div class="name">
+						<h1>Collins Koech</h1>
+						<h2 style="color:#000;">Developer</h2>
+					</div>
+					<div class="contact">
+						<div class="location">
+							<img src="./img/location.jpg">Nairobi
+						</div>
+						<div class="phone">
+							<img src="./img/phone.jpg">0728000107
+						</div>
+						<div class="emaili">
+							<img src="./img/mail.jpg">collinskoechck34@gmail.com
+						</div>
+						<div class="githubu">
+							<a href="https://github.com/collinskoech11"><img src="./img/github.jpg">collinskoech11</a>
+						</div>
+					</div>
+					<div class="summary">
+						<p>Motivated Web Designer adept at conceptualizing, designing and maintaining product interfaces to foster
+							exceptional user experiences. Dedicated creator of extremely accessible user interfaces and aesthetically
+							pleasing visual designs. Skilled at generating sites for both desktops and mobile browsers. Combines accepted
+							best practices with creative innovation to produce beautiful and functional results. Creative Web developer with
+							skill in both the front end and Back end. Authors web pages and repairing issues with full accuracy and efficiency.
+							Extensive familiarity in both Software and Hardware. Sound written and oral capabilities. Result driven Web
+							Developer specializing in user friendly interfaces for the various designs. Accustomed to fast-paced environment,
+							team and individual projects. Keen on learning new technologies that come up.</p>
+					</div>
+					<div class="skills">
+						<h4>Skills</h4>
+						<h4 style="color:#000;"><li>Web Developer</li></h4>
+						<h5>Free lancer ( Self Employed), Nairobi, Kenya</h5>
+						<div class="skill-list">
+							<li>Created Site interface layout using HTML CSS and Javascript</li>
+							<li>Implemented various technologies such as React.js, ReactNative and Node.js</li>
+							<li>Created various site backend using python( Django)</li>
+							<li>Created Wireframes, ScreenFlow diagrams and UI spec documentation</li>
+							<li>Defined and demonstrated top notch User interface to uphold user friendliness</li>
+							<li>Mentor for young Aspiring Web Developers</li>
+						</div>
+					</div>
+					<div class="skills">
+						<h4 style="color:#000;"><li>Android App Developer</li></h4>
+						<h5>Fast Learner (Enthusiastic about App developement)</h5>
+						<div class="skill-list">
+							<li>Designed user friendly interfaces using XML on android studio</li>
+							<li>Skilled in APP backend in both Java and Kotlin</li>
+							<li>Created Apps that are applicable in our day to day lives</li>
+						</div>
+					</div>
+					<div class="skills">
+						<h4 style="color:#000;"><li>Database Designer</li></h4>
+						<h5>Incredible Database Designing Skills</h5>
+						<div class="skill-list">
+							<li>Designed various database schemas for use in app backend management</li>
+							<li>Areas of focus on Database are MySql and MongoDB</li>
+							<li>Documented all designed database as a user guide for the intend users</li>
+							<li>Developed Flowcharts and Diagrams to illustrate flow of data through a Database</li>
+						</div>						
+					</div>
+					<div class="skills">
+						<h4 style="color:#000;"><li>Softwares and Systems Expert</li></h4>
+						<h5>Installation and Maintanance of Softwares</h5>
+						<div class="skill-list">
+							<li>Over 300+ Succesful Operating Systems Installation</li>
+							<li>Configured, Installed and tuned software based systems for perfomance in various databases</li>
+							<li>Experience in Maintaining Windows and Linux Operating Systems and their various distros</li>
+							<li>Performed System Backup and Restoration in various Cases</li>
+							<li>Reviewed Performance Benchmarks and established metrics for future tracking</li>
+							<li>Evaluated and adopted new technologies to address changing industry needs</li>
+							<li>Investigated and addressed System issues to enhance usability and improve functionality</li>
+							<li>Developed Flowcharts and Diagrams to illustrate flow of data through a system</li>
+						</div>
+					</div>
+					<div class="skills">
+						<h4 style="color: #000;"><li>Work Experience</li></h4>
+						<h5>May 2019</h5>
+						<div class="skill-list">
+							<li>Performed Systems maintanance at Kapchebet Girls Secondary School</li>
+							<p>Ref: Mrs Metet (Deputy Principal Kapchebet girls)</p>
+						</div>
+						<h5>June 2020</h5>
+						<div class="skill-list">
+							<li>Unpaid intern at DL Koisagat tea Factory</li>
+							<p>Ref: Mr Stanley Cheruiyot (General Manager DL Teas)</p>
+						</div>
+						<h5>July 2020</h5>
+						<div class="skill-list">
+							<li>Volunteer Author at iCOdEMag.com</li>
+							<p>Ref: contact@icodemag.com</p>
+						</div>
+						<h5>Septembr]er 2020</h5>
+						<div class="skill-list">
+							<li>Web Developement lead at DscCuea</li>
+							<p>Ref: Abigael Wairimu (Student Lead DscCuea)</p>
+						</div>
+						<h5>October 2020</h5>
+						<div class="skill-list">
+							<li>Lead Developer at DevCoKenya</li>
+						</div>
+					</div>
+					<div class="skills">
+						<h4 style="color: #000;">Certifications</h4>
+						<div class="skill-list">
+						<li>React + Redux</li>
+						<li>Angular + Nestjs</li>
+						<li>Python3</li>
+						<li>java</li>
+						<li>Javascript</li>
+						<li>Jquery</li>
+						<li>SQL</li>
+						<li>css</li>
+						<li>HTML</li>
+						</div>
+					</div>
+					<div class="skills">
+						<h3 style="color:#000;">Education</h3>
+						<h4 style="color:#000;">Completed Google Digital Skills Certification</h4>
+						<h5>Google Digital Skills</h5>
+						<br><br>
+						<h4 style="color:#000;">Diploma Degeree: Diploma in Mobile Information Technology</h4>
+						<h5>Emobilis institute of Technology</h5>
+						<br><br>
+						<h4 style="color:#000;">Bachelors Degree: Bachelor of Science in Computer Science</h4>
+						<h5>Currently taking my Computer Science Degree at The Catholic University of Eastern Africa</h5>
+						<br><br>
+						<h4 style="color:#000;">Secondary School Education</h4>
+						<h5>Sunshine Secondary School Nairobi</h5>
+					</div>
+					<div class="skills">
+						<h4 style="color:#000;"><li>Clubs</li></h4>
+						<h5>Web Developement lead Developer Students Club of CUEA</h5>
+						<h5>Founder at the DevCoKenya</h5>
+					</div>
+					<div class="skills">
+						<h3 style="color:#000;">Hobies Include:</h3>
+						<li>Coding</li>
+						<li>Swimming</li>
+						<li>hiking</li>
+					</div>
+				</div>
 		</div>
 	</div>
-	</div>
-	</div>
-	</div>
+	
+	<!--Footer container-->
+	<div class="content" style="background-color: rgb(0,0,0,0.1);">
+		<footer>
+			<div class="footer-background" style="background-color: rgb(0,0,0,0.1);">
+				<div class="footer-container" style="background-color: rgb(0,0,0,0.1);">
+				  <div class="screen">
+					<div class="screen-header">
+					  <div class="screen-header-left">
+						<div class="screen-header-button close"></div>
+						<div class="screen-header-button maximize"></div>
+						<div class="screen-header-button minimize"></div>
+					  </div>
+					  <div class="screen-header-right">
+						<div class="screen-header-ellipsis"></div>
+						<div class="screen-header-ellipsis"></div>
+						<div class="screen-header-ellipsis"></div>
+					  </div>
+					</div>
+					<div class="screen-body">
+					  <div class="screen-body-item left">
+						<div class="app-title">
+						  <span>CONTACT</span>
+						  <span>ME</span>
+						</div>
+						<div class="app-contact">CONTACT INFO : +254 728 000 107</div>
+					  </div>
+					  <div class="screen-body-item">
+						<form action="https://formspree.io/f/mqkgkgya" method="POST">
+							<div class="app-form">
+							<div class="app-form-group">
+								<input class="app-form-control" placeholder="NAME" name="name">
+							</div>
+							<div class="app-form-group">
+								<input class="app-form-control" placeholder="EMAIL" name="_replyto">
+							</div>
+							<div class="app-form-group">
+								<input class="app-form-control" placeholder="CONTACT NO">
+							</div>
+							<div class="app-form-group message">
+								<input class="app-form-control" placeholder="MESSAGE" name="message">
+							</div>
+							<div class="app-form-group buttons">
+								<button class="app-form-button">CANCEL</button>
+								<button class="app-form-button" type="submti" value="Send">SEND</button>
+							</div>
+							</div>
+						</form>
+					  </div>
+					</div>
+				  </div>
+				  <div class="credits">
+				
+					<a class="credits-link" href="https://dribbble.com/shots/2666271-Contact" target="_blank">
+					  <svg class="dribbble" viewBox="0 0 200 200">
+						<g stroke="#ffffff" fill="none">
+						  <circle cx="100" cy="100" r="90" stroke-width="20"></circle>
+						  <path d="M62.737004,13.7923523 C105.08055,51.0454853 135.018754,126.906957 141.768278,182.963345" stroke-width="20"></path>
+						  <path d="M10.3787186,87.7261455 C41.7092324,90.9577894 125.850356,86.5317271 163.474536,38.7920951" stroke-width="20"></path>
+						  <path d="M41.3611549,163.928627 C62.9207607,117.659048 137.020642,86.7137169 189.041451,107.858103" stroke-width="20"></path>
+						</g>
+					  </svg>
+					  Aspire to Inspire
+					</a>
+				  </div>
+				</div>
+			  </div>
+		</footer>
 	</div>
 
+	</div>
 	<script src="js/index.js"></script>
-	<script> 
-		new GitHubCalendar(".calendar", "collinskoech11");
-	</script>
+	<script src="github-widget/github-widget.min.js"></script>
+	
 	<script src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js"></script>
 	<!-- The core Firebase JS SDK is always required and must be listed first -->
 	<script src="/__/firebase/7.17.1/firebase-app.js"></script>
 
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
+		<!-- TODO: Add SDKs for Firebase products that you want to use
+    	 https://firebase.google.com/docs/web/setup#available-libraries -->
 	<script src="/__/firebase/7.17.1/firebase-analytics.js"></script>
 
-<!-- Initialize Firebase -->
-<script src="/__/firebase/init.js"></script>
+		<!-- Initialize Firebase -->
+	<script src="/__/firebase/init.js"></script>
 </body>
 </html>

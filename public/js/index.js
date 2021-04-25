@@ -13,6 +13,11 @@ function() {
 	document.querySelector('#btn').style.display = 'block';
 	document.querySelector('.header-opt').style.display = 'inline-block';
 });
+document.querySelector('.tab').addEventListener('click',
+function(){
+	const stat = document.querySelector('.stat');
+	stat.classList.toggle('move', behavior='smooth');
+});
 document.getElementById('closeo').addEventListener('click',
 	function(){
 	document.querySelector('.tweetPop').style.display = 'none';
@@ -24,6 +29,7 @@ document.getElementById('dep').addEventListener('click',
 		document.querySelector('.os-wrapper').style.display = 'none';
 		document.querySelector('.dep-wrapper').style.display = 'block';
 	});
+
 document.getElementById('web').addEventListener('click',
 	function() {
 		document.querySelector('.content-wrapper').style.display = 'block';
@@ -68,7 +74,7 @@ window.addEventListener("scroll",
 		const jambofive = document.querySelector(".jambofive");
 		jambofive.classList.toggle("scroll",window.scrollY > 1200);
 
-	})
+	});
 document.getElementById('low').addEventListener('click',
 	function(){
 		window.scrollTo({
@@ -80,5 +86,50 @@ document.getElementById('low').addEventListener('click',
 document.getElementById('twitter').addEventListener('click',
 	function(){
 		document.querySelector(".tweetPop").style.display = "block";
-	})
+	});
 	
+	anime.timeline({loop: true})
+  .add({
+    targets: '.ml15 .word',
+    scale: [14,1],
+    opacity: [0,1],
+    easing: "easeOutCirc",
+    duration: 800,
+    delay: (el, i) => 800 * i
+  }).add({
+    targets: '.ml15',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+
+
+
+  window.onload =  function(){setTimeout(hidePopup,5000)};
+  	function hidePopup(){
+		  document.querySelector('.prep').style.display='none';
+	  };
+
+/** 
+*	  window.onload = function(){setTimeout(showText,10000)};
+*	  	function showText(){
+*			  document.querySelector('.loadtxt').style.display="block";
+*			  document.querySelector('.loadimg').style.display="none";
+*		  };
+
+Display error message on failed load
+*/
+
+let myLabels = document.querySelectorAll('.lbl-toggle','.lbl-toggle1');
+
+Array.from(myLabels).forEach(label => {
+  label.addEventListener('keydown', e => {
+    // 32 === spacebar
+    // 13 === enter
+    if (e.which === 32 || e.which === 13) {
+      e.preventDefault();
+      label.click();
+    };
+  });
+})

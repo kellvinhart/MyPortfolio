@@ -1,3 +1,7 @@
 # MyPortfolio
-<a href="https://collinskoechportfolio.web.app">Live url</a>
-<img src="./img/Readme.jpg">
+## Now features Dark Mode compatibility 
+## Commit graph Re-design
+
+
+## <a href="https://collinskoechportfolio.web.app">Live url</a>
+Hosted on firebase
